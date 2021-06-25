@@ -42,11 +42,7 @@ public class MarketServiceImpl implements MarketService {
         return upMarket;
     }
 
-    public Market findBy() {
-        return null;
-    }
-
-    public void deleteMarket(Long id) {
+    public void deleteMarket(Long id)  {
         marketDao.delete(getMarket(id));
     }
 }

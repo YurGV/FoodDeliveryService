@@ -4,12 +4,13 @@ import com.delivery.api.dao.ClientDao;
 import com.delivery.api.service.ClientService;
 import com.delivery.domain.Client;
 
+import java.util.ArrayList;
 import java.util.List;
 
 
 public class ClientServiceImpl implements ClientService {
 
-    private final ClientDao clientDao;
+    private final ClientDao clientDao;                  // for loose coupling use DAO interface
 
     public ClientServiceImpl(ClientDao clientDao) {
         this.clientDao = clientDao;
@@ -43,14 +44,9 @@ public class ClientServiceImpl implements ClientService {
         return upClient;
     }
 
-    public Client findBy() {
-        return null;
-    }
-
-
-
     public void deleteClient(Long id) {
         clientDao.delete(clientDao.getById(id));
 
     }
+
 }

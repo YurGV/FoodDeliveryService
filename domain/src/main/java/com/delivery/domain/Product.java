@@ -29,8 +29,6 @@ public class Product {
     private Category category;
     @Column
     private Integer cost;
-    @Column
-    private String address;
 
     @ManyToOne
     @JoinColumn(name = "market_id")

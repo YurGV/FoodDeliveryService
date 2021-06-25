@@ -1,6 +1,7 @@
 package com.delivery.domain;
 
 import javax.persistence.*;
+import java.util.List;
 
 public class Order {
 
@@ -19,5 +20,5 @@ public class Order {
 
     @ManyToOne
     @JoinColumn(name = "product_id")
-    private Product product;
+    private List<Product> product;
 }

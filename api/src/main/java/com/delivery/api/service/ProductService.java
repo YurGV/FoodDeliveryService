@@ -1,7 +1,6 @@
 package com.delivery.api.service;
 
 import com.delivery.domain.Market;
-import com.delivery.domain.Order;
 import com.delivery.domain.Product;
 import com.delivery.domain.enums.Category;
 

@@ -2,7 +2,10 @@ package com.delivery.service;
 
 import com.delivery.api.dao.OrderDao;
 import com.delivery.api.service.OrderService;
+import com.delivery.domain.Client;
+import com.delivery.domain.Market;
 import com.delivery.domain.Order;
+import com.delivery.domain.Product;
 
 import java.util.List;
 
@@ -15,7 +18,8 @@ public class OrderServiceImpl implements OrderService {
     }
 
 
-    public Order addOrder() {
+    public Order addOrder(Market market, Client client, List<Product> products) {
+
         Order order = new Order();
         orderDao.save(order);
         return order;
@@ -27,14 +31,6 @@ public class OrderServiceImpl implements OrderService {
 
     public List<Order> getAllOrders() {
         return orderDao.getAll();
-    }
-
-    public Order updateOrder(Order editOrder) {
-        return null;
-    }
-
-    public Order findBy() {
-        return null;
     }
 
     public void deleteOrder(Long id) {

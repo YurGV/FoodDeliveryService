@@ -11,6 +11,5 @@ public interface MarketService {
     Market getMarket(Long id);
     List<Market> getAllMarkets();
     Market updateMarket(Market editMarket);
-    Market findBy();
     void deleteMarket(Long id);
 }
