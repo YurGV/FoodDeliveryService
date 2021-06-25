@@ -2,6 +2,7 @@ package com.delivery.main;
 
 import com.delivery.api.dao.ClientDao;
 import com.delivery.api.dao.MarketDao;
+import com.delivery.api.dao.OrderDao;
 import com.delivery.api.dao.ProductDao;
 import com.delivery.domain.Client;
 import com.delivery.domain.Market;
@@ -23,6 +24,7 @@ public class Main {
         final ProductDao productDao;                        // for loose coupling use DAO interface
         final MarketDao marketDao;
         final ClientDao clientDao;
+        final OrderDao orderDao;
 
         //create clients list
         List<Client> clients = new ArrayList<Client>();
@@ -56,14 +58,4 @@ public class Main {
 
     }
 
-    public class OrderFacade {
-        private Client client = new Client();
-        private Market market = new Market();
-        private Order order = new Order();
-        private Product product = new Product();
-
-        public void startOrder(){
-
-        }
-    }
 }

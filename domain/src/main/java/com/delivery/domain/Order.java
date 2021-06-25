@@ -1,8 +1,17 @@
 package com.delivery.domain;
 
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
 import javax.persistence.*;
 import java.util.List;
 
+@Entity
+@Data
+@AllArgsConstructor
+@NoArgsConstructor
+@Table(name = "order")
 public class Order {
 
 
@@ -20,5 +29,5 @@ public class Order {
 
     @ManyToOne
     @JoinColumn(name = "product_id")
-    private List<Product> product;
+    private Product product;
 }

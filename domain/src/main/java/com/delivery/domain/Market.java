@@ -1,6 +1,5 @@
 package com.delivery.domain;
 
-
 import com.delivery.domain.enums.Size;
 import lombok.AllArgsConstructor;
 import lombok.Data;

@@ -1,12 +1,11 @@
 package com.delivery.dao;
 
 import com.delivery.api.dao.GenericDao;
-import com.delivery.domain.Market;
-import com.delivery.domain.Product;
+
 
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Optional;
+
 
 public abstract class AbstractDao<T> implements GenericDao<T> {
 

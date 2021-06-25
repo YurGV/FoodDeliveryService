@@ -18,7 +18,7 @@ public class OrderServiceImpl implements OrderService {
     }
 
 
-    public Order addOrder(Market market, Client client, List<Product> products) {
+    public Order addOrder(Market market, Client client, Product products) {
 
         Order order = new Order();
         orderDao.save(order);

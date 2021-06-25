@@ -10,7 +10,7 @@ import java.util.List;
 
 public interface OrderService {
 
-    Order addOrder(Market market, Client client, List<Product> products);
+    Order addOrder(Market market, Client client, Product products);
     Order getOrder(Long id);
     List<Order> getAllOrders();
     void deleteOrder(Long id);
